@@ -1,0 +1,78 @@
+*
+{
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+body{
+    text-align: center;
+    background-image: url(onn.jfif);
+    background-size: auto;
+    font-style:normal;
+    font-family:sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for each menu item */
+ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Style for the links */
+ul li a {
+    display:block;
+    padding: 10px;
+    background-color:tomato;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 23px;
+}
+
+/* Hover effect for main menu items */
+ul li a:hover {
+    background-color:tomato;
+}
+
+/* Hide the dropdowns by default */
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+ul li:hover > ul {
+    display: block;
+}
+
+/* Style the dropdown items */
+ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+/* Style the links inside the dropdown */
+ul li ul li a {
+    width: 200px;
+    background-color:aquamarine;
+}
+
+/* Hover effect for dropdown items */
+ul li ul li a:hover {
+    background-color: #666;
+}
+
+/* Style for deeper nested dropdowns */
+ul li ul li ul {
+    left: 100%;
+    top: 35px;
+}
